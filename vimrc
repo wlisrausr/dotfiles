@@ -189,6 +189,9 @@ let g:airline_theme='jellybeans' " Set airline theme
 let g:airline#extensions#tabline#enabled=1        " Show airline for tabs too
 let g:airline#extensions#tabline#left_sep=' '     " Set left separator
 let g:airline#extensions#tabline#left_alt_sep='|' " Set alt separator
+
+" In vim-airline, only display 'hunks' if the diff is non-zero
+let g:airline#extensions#hunks#non_zero_only=1
 " }
 
 " Easy align stuff {
@@ -202,8 +205,5 @@ nmap ga <Plug>(EasyAlign)
 " Gitgutter stuff {
 " Required after having changed the colorscheme
 hi clear SignColumn
-
-" In vim-airline, only display 'hunks' if the diff is non-zero
-let g:airline#extensions#hunks#non_zero_only=1
 " }
 " }
