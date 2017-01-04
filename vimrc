@@ -176,7 +176,12 @@ cmap w!! w !sudo tee > /dev/null %<CR>
 " Plugins spesific settings {
 " Nerdtree stuff {
 " NerdTree mapping shortcut
-nmap <C-n> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
+
+" Open nerdtree when file not spesified {
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" }
 " }
 
 " Airline stuff {
