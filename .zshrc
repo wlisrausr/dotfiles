@@ -16,9 +16,6 @@ export UPDATE_ZSH_DAYS=7
 # Disable auto-setting terminal title.
 DISABLE_AUTO_TITLE="true"
 
-# Enable command auto-correction.
-ENABLE_CORRECTION="true"
-
 # Disable marking untracked files under VCS as dirty
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
