@@ -1,13 +1,4 @@
-## My Personal Dotfiles Configuration
+## My Personal Dotfiles
 
-This repository just aims to make me learn how to use git, github, and save all
-of my dotfiles configuration including vimrc, zshrc, etc. Feel free to share,
-use, or modify it.
-
-## Contributors
-
-Wanda Ichsanul Isra.
-
-## License
-
-MIT License.
+This repository just aims to save all of my dotfiles configuration including
+vimrc, zshrc, etc. I hope, you find something interested enough in here.
