@@ -82,6 +82,12 @@ Plug 'ervandew/supertab'
 
 " Snippet solution <https://github.com/SirVer/ultisnips>
 Plug 'SirVer/ultisnips'
+
+" Up-to-date PHP syntax <https://github.com/StanAngeloff/php.vim>
+" Plug 'StanAngeloff/php.vim'
+
+" Indentation line level <https://github.com/Yggdroot/indentLine>
+" Plug 'Yggdroot/indentLine'
 " }
 
 call plug#end() " }
@@ -196,6 +202,15 @@ let g:airline#extensions#tabline#left_alt_sep='|' " Set alt separator
 let g:airline#extensions#hunks#non_zero_only=1
 " }
 
+" IndentLine stuff {
+" JSON VIM - Fix indentLine problem
+" let g:indentLine_noConcealCursor="nc"
+
+" Indent
+" let g:indentLine_enabled = 0
+" nmap <F3> :IndentLinesToggle<CR>
+" }
+
 " Easy align stuff {
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
@@ -207,5 +222,18 @@ nmap ga <Plug>(EasyAlign)
 " Gitgutter stuff {
 " Required after having changed the colorscheme
 hi clear SignColumn
+" }
+
+" PHP.vim stuff {
+" Put at the very end of your .vimrc file.
+" function! PhpSyntaxOverride()
+"   hi! def link phpDocTags  phpDefine
+"   hi! def link phpDocParam phpType
+" endfunction
+
+" augroup phpSyntaxOverride
+"   autocmd!
+"   autocmd FileType php call PhpSyntaxOverride()
+" augroup END
 " }
 " }
