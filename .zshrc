@@ -4,14 +4,8 @@ export ZSH=/Users/wlisrausr/.oh-my-zsh
 # Set name of the theme to load.
 ZSH_THEME="agnoster-custom"
 
-# Case-sensitive completion.
-CASE_SENSITIVE="true"
-
 # Disable bi-weekly auto-update checks.
 DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
-export UPDATE_ZSH_DAYS=7
 
 # Disable auto-setting terminal title.
 DISABLE_AUTO_TITLE="true"
@@ -31,14 +25,11 @@ export DEFAULT_USER='wlisrausr'
 
 # Export PATH
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH=/usr/local/mysql/bin:$PATH
+export PATH=/usr/local/php5/bin:$PATH
+export LANG=en_US.UTF-8
+export EDITOR=vim
+export TERM="xterm-256color"
 
 source $ZSH/oh-my-zsh.sh
-
-# Path to MySQl
-export PATH=/usr/local/mysql/bin:$PATH
-
-# Path to PHP 7.0
-export PATH=/usr/local/php5/bin:$PATH
-
-# ZSH syntax highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
