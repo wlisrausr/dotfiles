@@ -1,11 +1,26 @@
 [core]
 	excludesfile = /Users/wlisrausr/.gitignore_global
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+	editor = vim
+	autocrlf = true
 [user]
 	name = Wanda Ichsanul Isra
 	email = wandaisra@gmail.com
+[alias]
+	sp = status
+	ss = status -s
+	ssb = status -sb
+	si = status --ignored
+	au = add -u
+	adot = add .
+	ap = add
+	cp = commit
+	cam = commit -am
+	cm = commit -m
+	lp = log
+	lpr = log --color --graph --pretty=format:'%C(auto)%h%Creset » %d%s %Cgreen(%cr) %C(blue)<%an> %C(yellow)<%ae>%Creset' --abbrev-commit
+	co = chekcout
+	df = diff --color --color-words --abbrev
+[push]
+	default = current
+[color]
+	ui = always
