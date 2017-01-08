@@ -140,7 +140,7 @@ set nofoldenable          " Don't fold by default
 " Change file update time from 4s to 0.25s for gitgutter
 set updatetime=250
 
-set colorcolumn=80        " Column guide at 80 char
+set colorcolumn=80        " Column guide at 80 char (PSR-2 rule)
 set textwidth=80          " Autowrap at 80 char
 set ignorecase            " Ignore case on autocomplete command
 
@@ -178,6 +178,9 @@ nnoremap <leader>er :source $MYVIMRC<cr>
 " Force sudo if not root
 cmap w!! w !sudo tee > /dev/null %<CR>
 " }
+
+" Auto remove trailing whitespace
+autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 " Plugins spesific settings {
 " Nerdtree stuff {
