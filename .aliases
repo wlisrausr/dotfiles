@@ -23,3 +23,7 @@ alias chmod-reset='find . -type d -print0 | xargs -0 chmod 755 && find . -type f
 
 # Remove unnecessary files
 alias remove-unnecessary-files="find . -type f \( -name .DS_Store -o -name Thumbs.db \) -print0 | xargs -0 rm"
+
+# Start and stop mysql server
+alias start-mysqls="sudo /usr/local/mysql/support-files/mysql.server start"
+alias stop-mysqls="sudo /usr/local/mysql/support-files/mysql.server stop"
