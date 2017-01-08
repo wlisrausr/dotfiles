@@ -1,0 +1,25 @@
+#/usr/bin/env sh
+
+# Reload zshrc
+alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
+
+alias ping8='ping 8.8.8.8'        # Ping the biggest DNS site
+alias pingg='ping www.google.com' # Ping the biggest search engine
+
+alias mkdir='mkdir -p'            # Make directory with intermediate option
+alias tmux='tmux -u'              # Start tmux session with UTF-8 checks
+alias hosts='sudo vim /etc/hosts' # Edit hosts name
+
+alias lsd='ls -l | grep "^d"' # List directory only
+alias lsf='ls -l | grep "^-"' # List files only
+alias lsh='ls -ld .??*'       # List hidden files only
+alias lsa='ls -la'            # List all files
+
+alias art='php artisan --env=local' # Run artisan command
+alias ar='sudo apachectl restart'   # Restart apache
+
+# Reset file permission to default
+alias chmod-reset='find . -type d -print0 | xargs -0 chmod 755 && find . -type f -print0 | xargs -0 chmod 644'
+
+# Remove unnecessary files
+alias remove-unnecessary-files="find . -type f \( -name .DS_Store -o -name Thumbs.db \) -print0 | xargs -0 rm"
