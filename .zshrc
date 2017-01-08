@@ -28,8 +28,16 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH=/usr/local/mysql/bin:$PATH
 export PATH=/usr/local/php5/bin:$PATH
 export LANG=en_US.UTF-8
-export EDITOR=vim
 export TERM="xterm-256color"
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='vim'
+fi
+
+export EDITOR=vim
 
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
