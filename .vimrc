@@ -3,8 +3,9 @@
 "
 " Feel free to share, use, or modify it
 
-set nocompatible          " Use Vim settings rather than Vi settings
-filetype on               " Enable file type detection
+" Use Vim settings rather than Vi settings
+" Should be first for the best effect
+set nocompatible
 
 " Enable custom identation for each file type check .vim/ftplugin
 filetype plugin indent on
@@ -96,6 +97,7 @@ call plug#end() " }
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
+filetype on                " Enable file type detection
 set number                 " Show line number
 set title                  " Show window title
 set ruler                  " Show cursor position all the time
@@ -103,7 +105,10 @@ set cursorline             " Highlight current cursor line
 set cursorcolumn           " Highlight current cursor column
 set wildmenu               " Show command line completion with <Tab>
 set showcmd                " Display incomplete command
-syntax enable              " Enable syntax highlighting
+" set clipboard=unnamed    " use the system clipboard
+" set showmatch
+" set vb
+syntax on                  " Show syntax highlighting
 set incsearch              " Do incremental searching
 set nohlsearch             " Don't highlight search result
 set wrap linebreak nolist  " Better word wrap
@@ -115,7 +120,7 @@ set encoding=utf-8         " Set char encoding to UTF-8
 set background=dark        " Set background colors to dark
 colorscheme Tomorrow-Night " Set colorscheme
 
-" Make vim colors look good {
+" Make vim color looks good {
 hi Normal ctermbg=NONE
 hi NonText ctermbg=NONE
 " }
@@ -177,12 +182,15 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 " Reload vimrc shortcut
 nnoremap <leader>er :source $MYVIMRC<cr>
 
-" Force sudo if not root
+" Force sudo if not root with ':w!!'
 cmap w!! w !sudo tee > /dev/null %<CR>
 " }
 
-" Auto remove trailing whitespace
+" Auto remove trailing whitespace when write
 autocmd BufWritePre <buffer> :%s/\s\+$//e
+
+" Add visual line to block of code by '%' key
+noremap % v%
 
 " Plugins spesific settings {
 " Nerdtree stuff {
@@ -190,6 +198,12 @@ autocmd BufWritePre <buffer> :%s/\s\+$//e
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " }
+
+" Only nerdtree open? Close vim!
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Tree explorer mapping
+map <leader>n :NERDTreeToggle<CR>
 " }
 
 " Airline stuff {
@@ -227,6 +241,10 @@ nmap ga <Plug>(EasyAlign)
 " Gitgutter stuff {
 " Required after having changed the colorscheme
 hi clear SignColumn
+" }
+
+" Ctrlp stuff {
+let g:ctrlp_map = '<leader>f'
 " }
 
 " PHP.vim stuff {
