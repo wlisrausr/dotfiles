@@ -148,8 +148,11 @@ set updatetime=250
 " Column guide at 80 char (PSR-2 rule)
 autocmd BufNewFile,BufRead *.php set colorcolumn=80
 
-set textwidth=80          " Autowrap at 80 char
-set ignorecase            " Ignore case on autocomplete command
+" Autowrap at 80 char
+autocmd BufNewFile,BufRead *.php set textwidth=80
+
+" Ignore case on autocomplete command
+set ignorecase
 
 let mapleader="," " Set leader key to comma
 
