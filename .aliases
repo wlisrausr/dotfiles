@@ -15,7 +15,10 @@ alias lsf='ls -l | grep "^-"' # List files only
 alias lsh='ls -ld .??*'       # List hidden files only
 alias lsa='ls -la'            # List all files
 
+# Laravel stuff
 alias art='php artisan --env=local' # Run artisan command
+alias phpunit='./vendor/bin/phpunit'
+
 alias ar='sudo apachectl restart'   # Restart apache
 
 # Reset file permission to default
