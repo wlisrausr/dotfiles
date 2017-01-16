@@ -1,7 +1,7 @@
 [core]
 	excludesfile = /Users/wlisrausr/.gitignore_global
 	editor = vim
-	autocrlf = true
+	autocrlf = input
 [user]
 	name = Wanda Ichsanul Isra
 	email = wandaisra@gmail.com
