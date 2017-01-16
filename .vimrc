@@ -125,6 +125,9 @@ hi Normal ctermbg=NONE
 hi NonText ctermbg=NONE
 " }
 
+" Python indent setup
+au FileType python setl sw=2 sts=2 et
+
 " Tab settings {
 set expandtab             " Expand tabs into spaces
 set tabstop=4             " Default to 4 spaces for a hard tab
