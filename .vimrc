@@ -89,6 +89,9 @@ Plug 'SirVer/ultisnips'
 
 " Indentation line level <https://github.com/Yggdroot/indentLine>
 " Plug 'Yggdroot/indentLine'
+
+" Vim python mode <https://github.com/python-mode/python-mode>
+Plug 'klen/python-mode'
 " }
 
 call plug#end() " }
@@ -248,6 +251,11 @@ hi clear SignColumn
 
 " Ctrlp stuff {
 let g:ctrlp_map = '<leader>f'
+" }
+
+" Pymode stuff {
+let g:pymode_lint_unmodified = 0
+let g:pymode_lint_message = 1
 " }
 
 " PHP.vim stuff {
