@@ -150,20 +150,17 @@ set updatetime=250
 
 " Column guide at 80 char (PSR-2 rule)
 autocmd BufNewFile,BufRead *.php
-  set colorcolumn=80
-  set textwidth=80
+  \ set colorcolumn=79
+  \ set textwidth=79
 
 " Ignore case on autocomplete command
 set ignorecase
 
-au BufNewFile,BufRead *.py
-  set tabstop=4
-  set softtabstop=4
-  set shiftwidth=4
-  set textwidth=79
-  set expandtab
-  set autoindent
-  set fileformat=unix
+" Frontend stuff setup
+au BufNewFile,BufRead *.js, *.html, *.css
+  \ set tabstop=2
+  \ set softtabstop=2
+  \ set shiftwidth=2
 
 let mapleader="," " Set leader key to comma
 
