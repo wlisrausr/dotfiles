@@ -108,7 +108,7 @@ set cursorline             " Highlight current cursor line
 set cursorcolumn           " Highlight current cursor column
 set wildmenu               " Show command line completion with <Tab>
 set showcmd                " Display incomplete command
-" set clipboard=unnamed    " use the system clipboard
+set clipboard=unnamed      " use the system clipboard
 " set showmatch
 " set vb
 syntax on                  " Show syntax highlighting
