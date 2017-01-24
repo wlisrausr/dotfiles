@@ -123,6 +123,9 @@ set encoding=utf-8         " Set char encoding to UTF-8
 set background=dark        " Set background colors to dark
 colorscheme Tomorrow-Night " Set colorscheme
 
+" Set window title for timing app
+set titlestring=Vim\ %(\ %{expand(\"%:p:h\")}%)/%(\ %a%)
+
 " Make vim color looks good {
 hi Normal ctermbg=NONE
 hi NonText ctermbg=NONE
