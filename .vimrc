@@ -76,7 +76,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'jwalton512/vim-blade'
 
 " Fuzzy finder <https://github.com/ctrlpvim/ctrlp.vim>
-Plug 'ctrlpvim/ctrlp.vim'
+" Plug 'ctrlpvim/ctrlp.vim'
 
 " Vim insert mode completion <https://github.com/ervandew/supertab>
 Plug 'ervandew/supertab'
@@ -92,6 +92,9 @@ Plug 'SirVer/ultisnips'
 
 " Vim python mode <https://github.com/python-mode/python-mode>
 Plug 'klen/python-mode'
+
+" Command line fuzzy finder <https://github.com/junegunn/fzf>
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " }
 
 call plug#end() " }
@@ -256,7 +259,7 @@ hi clear SignColumn
 " }
 
 " Ctrlp stuff {
-let g:ctrlp_map = '<leader>f'
+" let g:ctrlp_map = '<leader>f'
 " }
 
 " Pymode stuff {
