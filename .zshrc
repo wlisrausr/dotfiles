@@ -43,4 +43,7 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Vi mode
 bindkey -v
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
