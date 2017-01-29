@@ -19,7 +19,7 @@ alias lsa='ls -la'            # List all files
 alias art='php artisan --env=local' # Run artisan command
 alias phpunit='./vendor/bin/phpunit'
 
-alias ar='sudo apachectl restart'   # Restart apache
+# alias ar='sudo apachectl restart'   # Restart apache
 
 # Reset file permission to default
 alias chmod-reset='find . -type d -print0 | xargs -0 chmod 755 && find . -type f -print0 | xargs -0 chmod 644'
@@ -28,9 +28,30 @@ alias chmod-reset='find . -type d -print0 | xargs -0 chmod 755 && find . -type f
 alias remove-unnecessary-files="find . -type f \( -name .DS_Store -o -name Thumbs.db \) -print0 | xargs -0 rm"
 
 # Start and stop mysql server
-alias start-mysqls="sudo /usr/local/mysql/support-files/mysql.server start"
-alias stop-mysqls="sudo /usr/local/mysql/support-files/mysql.server stop"
+# alias start-mysqls="sudo /usr/local/mysql/support-files/mysql.server start"
+# alias stop-mysqls="sudo /usr/local/mysql/support-files/mysql.server stop"
 
 # Python aliases
 alias python2='python2.7'
 alias python='python3'
+
+# Nginx aliases
+alias nginx.start='sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
+alias nginx.stop='sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
+alias nginx.restart='nginx.stop && nginx.start'
+alias nginx.config='sudo nginx -t'
+
+# PHP FPM aliases
+alias php-fpm.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php56.plist"
+alias php-fpm.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.php56.plist"
+alias php-fpm.restart='php-fpm.stop && php-fpm.start'
+
+# MySQL aliases
+alias mysql.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
+alias mysql.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
+alias mysql.restart='mysql.stop && mysql.start'
+
+# Nginx log aliases
+alias nginx.logs.error='tail -250f /usr/local/etc/nginx/logs/error.log'
+alias nginx.logs.access='tail -250f /usr/local/etc/nginx/logs/access.log'
+alias nginx.logs.default.access='tail -250f /usr/local/etc/nginx/logs/default.access.log'
