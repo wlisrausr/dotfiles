@@ -26,6 +26,9 @@ export DEFAULT_USER='wlisrausr'
 # Export PATH
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+
 export LANG=en_US.UTF-8
 export TERM="xterm-256color"
 
@@ -46,4 +49,3 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 bindkey -v
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export PATH="/usr/local/sbin:$PATH"
