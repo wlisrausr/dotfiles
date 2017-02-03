@@ -43,8 +43,8 @@ alias nginx.config='sudo nginx -t'
 alias nginx.enter='cd /usr/local/etc/nginx'
 
 # PHP FPM aliases
-alias php-fpm.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php56.plist"
-alias php-fpm.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.php56.plist"
+alias php-fpm.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php71.plist"
+alias php-fpm.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.php71.plist"
 alias php-fpm.restart='php-fpm.stop && php-fpm.start'
 
 # MySQL aliases
