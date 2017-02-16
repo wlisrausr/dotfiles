@@ -14,22 +14,16 @@ alias lsd='ls -l | grep "^d"' # List directory only
 alias lsf='ls -l | grep "^-"' # List files only
 alias lsh='ls -ld .??*'       # List hidden files only
 alias lsa='ls -la'            # List all files
+alias lsah='ls -lAh'          # List all files with human readable size format
 
-# Laravel stuff
-alias art='php artisan --env=local' # Run artisan command
-alias phpunit='./vendor/bin/phpunit'
-
-# alias ar='sudo apachectl restart'   # Restart apache
+alias art='php artisan --env=local'  # Run artisan command
+alias phpunit='./vendor/bin/phpunit' # Run PHP unit
 
 # Reset file permission to default
 alias chmod-reset='find . -type d -print0 | xargs -0 chmod 755 && find . -type f -print0 | xargs -0 chmod 644'
 
 # Remove unnecessary files
 alias remove-unnecessary-files="find . -type f \( -name .DS_Store -o -name Thumbs.db \) -print0 | xargs -0 rm"
-
-# Start and stop mysql server
-# alias start-mysqls="sudo /usr/local/mysql/support-files/mysql.server start"
-# alias stop-mysqls="sudo /usr/local/mysql/support-files/mysql.server stop"
 
 # Python aliases
 alias python2='python2.7'
