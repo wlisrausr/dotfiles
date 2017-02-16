@@ -49,3 +49,5 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 bindkey -v
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+eval "$(fasd --init auto)"
