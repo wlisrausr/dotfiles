@@ -50,4 +50,5 @@ bindkey -v
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Fasd auto init
 eval "$(fasd --init auto)"
