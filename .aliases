@@ -56,3 +56,13 @@ alias mysql.restart='mysql.stop && mysql.start'
 alias nginx.logs.error='tail -250f /usr/local/etc/nginx/logs/error.log'
 alias nginx.logs.access='tail -250f /usr/local/etc/nginx/logs/access.log'
 alias nginx.logs.default.access='tail -250f /usr/local/etc/nginx/logs/default.access.log'
+
+# Fasd aliases
+alias a='fasd -a'        # any
+alias s='fasd -si'       # show / search / select
+alias d='fasd -d'        # directory
+alias f='fasd -f'        # file
+alias sd='fasd -sid'     # interactive directory selection
+alias sf='fasd -sif'     # interactive file selection
+alias z='fasd_cd -d'     # cd, same functionality as j in autojump
+alias zz='fasd_cd -d -i' # cd with interactive selection
