@@ -45,9 +45,6 @@ Plug 'tpope/vim-surround'
 " Expanding abbreviations <https://github.com/mattn/emmet-vim>
 Plug 'mattn/emmet-vim'
 
-" Expanding abbreviations <https://github.com/rstacruz/sparkup>
-Plug 'rstacruz/sparkup'
-
 " Motion on speed <https://github.com/easymotion/vim-easymotion>
 Plug 'easymotion/vim-easymotion'
 
