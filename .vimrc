@@ -37,9 +37,6 @@ Plug 'mattn/emmet-vim'
 " Motion on speed <https://github.com/easymotion/vim-easymotion>
 Plug 'easymotion/vim-easymotion'
 
-" Easy buffer management <https://github.com/qpkorr/vim-bufkill>
-Plug 'qpkorr/vim-bufkill'
-
 " Show git diff in the gutter <https://github.com/airblade/vim-gitgutter>
 Plug 'airblade/vim-gitgutter'
 
