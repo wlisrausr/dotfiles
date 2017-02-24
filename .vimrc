@@ -19,9 +19,6 @@ Plug 'vim-airline/vim-airline-themes'
 " Make project's tree explorer <https://github.com/scrooloose/nerdtree>
 Plug 'scrooloose/nerdtree'
 
-" Tree & tabs together <https://github.com/jistr/vim-nerdtree-tabs>
-Plug 'jistr/vim-nerdtree-tabs'
-
 " Make alignment super easier <https://github.com/junegunn/vim-easy-align>
 Plug 'junegunn/vim-easy-align'
 
@@ -75,6 +72,9 @@ Plug 'klen/python-mode'
 
 " Command line fuzzy finder <https://github.com/junegunn/fzf>
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+" Git wrapper <https://github.com/tpope/vim-fugitive>
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -189,18 +189,14 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 map <leader>n :NERDTreeToggle<CR>
 
 " Airline stuff
-set laststatus=2 " Always show airline status bar
-
-let g:airline_powerline_fonts=1  " Enable fancy arrow symbols
-let g:airline_detect_paste=1     " Show paste if in paste mode
-let g:airline_theme='jellybeans' " Set airline theme
-
+set laststatus=2                                  " Always show airline status bar
+let g:airline_powerline_fonts=1                   " Enable fancy arrow symbols
+let g:airline_detect_paste=1                      " Show paste if in paste mode
+let g:airline_theme='jellybeans'                  " Set airline theme
 let g:airline#extensions#tabline#enabled=1        " Show airline for tabs too
 let g:airline#extensions#tabline#left_sep=' '     " Set left separator
 let g:airline#extensions#tabline#left_alt_sep='|' " Set alt separator
-
-" In vim-airline, only display 'hunks' if the diff is non-zero
-let g:airline#extensions#hunks#non_zero_only=1
+let g:airline#extensions#hunks#non_zero_only=1    " In vim-airline, only display 'hunks' if the diff is non-zero
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
