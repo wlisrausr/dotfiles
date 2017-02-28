@@ -22,8 +22,8 @@ Plug 'scrooloose/nerdtree'
 " Make alignment super easier <https://github.com/junegunn/vim-easy-align>
 Plug 'junegunn/vim-easy-align'
 
-" Comment stuff out <https://github.com/tpope/vim-commentary>
-Plug 'tpope/vim-commentary'
+" Comment stuff out <https://github.com/scrooloose/nerdcommenter>
+Plug 'scrooloose/nerdcommenter'
 
 " Enable multiple selection and replace <https://github.com/terryma/vim-multiple-cursors>
 Plug 'terryma/vim-multiple-cursors'
@@ -61,14 +61,29 @@ Plug 'ervandew/supertab'
 " Vim python mode <https://github.com/python-mode/python-mode>
 Plug 'klen/python-mode'
 
-" Command line fuzzy finder <https://github.com/junegunn/fzf>
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+" Fuzzy finder <https://github.com/kien/ctrlp.vim>
+Plug 'kien/ctrlp.vim'
 
 " Git wrapper <https://github.com/tpope/vim-fugitive>
 Plug 'tpope/vim-fugitive'
 
 " Up-to-date PHP syntax <https://github.com/stanangeloff/php.vim>
 Plug 'stanangeloff/php.vim'
+
+" Syntax checking hacks <https://github.com/vim-syntastic/syntastic>
+Plug 'scrooloose/syntastic'
+
+" Browse tags of current file <https://github.com/majutsushi/tagbar>
+Plug 'majutsushi/tagbar'
+
+" Javascript indentation & syntax support <https://github.com/pangloss/vim-javascript>
+Plug 'pangloss/vim-javascript'
+
+" Repeat function for plugin keybinding <https://github.com/tpope/vim-repeat>
+Plug 'tpope/vim-repeat'
+
+" HTML 5 <https://github.com/othree/html5.vim>
+Plug 'othree/html5.vim'
 
 call plug#end()
 
@@ -86,7 +101,7 @@ set showcmd                " Display incomplete command
 syntax on                  " Show syntax highlighting
 set incsearch              " Do incremental searching
 set nohlsearch             " Don't highlight search result
-set wrap linebreak nolist  " Better word wrap
+set nowrap                 " Don't wrap line
 set smartindent            " Activate auto indenting
 set smartcase              " Override ignorecase on uppercase search
 set copyindent             " Use same indent
@@ -114,7 +129,7 @@ set shiftwidth=4
 filetype plugin on
 
 " Fold setings
-set foldmethod=indent     " Fold based on indent
+set foldmethod=syntax     " Fold based on syntax
 set foldnestmax=10        " Deepest fold is 10 levels
 set nofoldenable          " Don't fold by default
 
@@ -127,11 +142,6 @@ autocmd BufNewFile,BufRead *.php set textwidth=80
 
 " Ignore case on autocomplete command
 set ignorecase
-
-" Frontend stuff setup
-au BufNewFile,BufRead *.js, *.html, *.css set tabstop=2
-au BufNewFile,BufRead *.js, *.html, *.css set softtabstop=2
-au BufNewFile,BufRead *.js, *.html, *.css set shiftwidth=2
 
 " Set leader key to comma
 let mapleader=","
@@ -198,8 +208,11 @@ xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " Pymode stuff
-let g:pymode_lint_unmodified = 1
-let g:pymode_lint_message = 1
+let g:pymode_lint_unmodified=1
+let g:pymode_lint_message=1
+
+" Set python 3 syntax checking
+" let g:pymode_python = 'python3'
 
 " Goyo Stuff
 " Auto activate goyo with ligthlime
@@ -208,10 +221,6 @@ autocmd! User GoyoLeave Limelight!
 
 " Set goyo width
 let g:goyo_width=130
-
-" Python-mode stuff
-" Set python 3 syntax checking
-let g:pymode_python = 'python3'
 
 " PHP vim stuff
 " Put at the very end of your .vimrc file.
@@ -224,3 +233,18 @@ augroup phpSyntaxOverride
   autocmd!
   autocmd FileType php call PhpSyntaxOverride()
 augroup END
+
+" Tagbar stuff
+nmap <F8> :TagbarToggle<CR>
+
+" Ctrlp stuff
+let g:ctrlp_map = '<c-p>'
+
+" The nerd commenter stuff
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims=1
+
+" Vim-javascript stuff
+let g:javascript_plugin_jsdoc=1 " Syntax highlighting for JSDocs
+let g:javascript_plugin_ngdoc=1 " Syntax highlighting for NGDocs
+let g:javascript_plugin_flow=1  " Syntax highlighting for flow
