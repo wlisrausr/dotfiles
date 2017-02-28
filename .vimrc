@@ -52,17 +52,11 @@ Plug 'junegunn/limelight.vim'
 " Auto-completion for special char <https://github.com/Raimondi/delimitMate>
 Plug 'Raimondi/delimitMate'
 
-" Auto-completion <https://github.com/scrooloose/nerdcommenter>
-Plug 'scrooloose/nerdcommenter'
-
 " Blade syntax highlighting <https://github.com/jwalton512/vim-blade>
 Plug 'jwalton512/vim-blade'
 
 " Vim insert mode completion <https://github.com/ervandew/supertab>
 Plug 'ervandew/supertab'
-
-" Snippet solution <https://github.com/SirVer/ultisnips>
-Plug 'SirVer/ultisnips'
 
 " Vim python mode <https://github.com/python-mode/python-mode>
 Plug 'klen/python-mode'
@@ -139,18 +133,6 @@ au BufNewFile,BufRead *.js, *.html, *.css set shiftwidth=2
 " Set leader key to comma
 let mapleader=","
 
-" Disable up
-nnoremap <Up> :echomsg "Arrow isn't allowed. Use 'k'"<cr>
-
-" Disable down
-nnoremap <Down> :echomsg "Arrow isn't allowed. Use 'j'"<cr>
-
-" Disable left
-nnoremap <Left> :echomsg "Arrow isn't allowed. Use 'h'"<cr>
-
-" Disable right
-nnoremap <Right> :echomsg "Arrow isn't allowed. Use 'l'"<cr>
-
 " Set jk as <esc> in insert mode
 inoremap jk <esc>
 
@@ -175,6 +157,16 @@ autocmd BufWritePre <buffer> :%s/\s\+$//e
 " Add visual line to block of code by '%' key
 noremap % v%
 
+" Plugin config stuff start here
+" GitGutter stuff
+" Required after having changed the colorscheme
+hi clear SignColumn
+
+" Set hunks jump mapping for gitgutter
+nmap ]h <Plug>GitGutterNextHunk
+nmap [h <Plug>GitGutterPrevHunk
+
+" Nerdtree Stuff
 " Open nerdtree when file not spesified
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
@@ -195,16 +187,25 @@ let g:airline#extensions#tabline#left_sep=' '     " Set left separator
 let g:airline#extensions#tabline#left_alt_sep='|' " Set alt separator
 let g:airline#extensions#hunks#non_zero_only=1    " In vim-airline, only display 'hunks' if the diff is non-zero
 
+" EasyAlign stuff
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
-" Gitgutter stuff
-" Required after having changed the colorscheme
-hi clear SignColumn
-
 " Pymode stuff
 let g:pymode_lint_unmodified = 1
 let g:pymode_lint_message = 1
+
+" Goyo Stuff
+" Auto activate goyo with ligthlime
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+
+" Set goyo width
+let g:goyo_width=130
+
+" Python-mode stuff
+" Set python 3 syntax checking
+let g:pymode_python = 'python3'
