@@ -67,6 +67,9 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Git wrapper <https://github.com/tpope/vim-fugitive>
 Plug 'tpope/vim-fugitive'
 
+" Up-to-date PHP syntax <https://github.com/stanangeloff/php.vim>
+Plug 'stanangeloff/php.vim'
+
 call plug#end()
 
 " Allow backspacing over everything in insert mode
@@ -209,3 +212,15 @@ let g:goyo_width=130
 " Python-mode stuff
 " Set python 3 syntax checking
 let g:pymode_python = 'python3'
+
+" PHP vim stuff
+" Put at the very end of your .vimrc file.
+function! PhpSyntaxOverride()
+  hi! def link phpDocTags  phpDefine
+  hi! def link phpDocParam phpType
+endfunction
+
+augroup phpSyntaxOverride
+  autocmd!
+  autocmd FileType php call PhpSyntaxOverride()
+augroup END
