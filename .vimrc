@@ -85,6 +85,9 @@ Plug 'tpope/vim-repeat'
 " HTML 5 <https://github.com/othree/html5.vim>
 Plug 'othree/html5.vim'
 
+" Syntax for js libraries <https://github.com/othree/javascript-libraries-syntax.vim>
+Plug 'othree/javascript-libraries-syntax.vim'
+
 call plug#end()
 
 " Allow backspacing over everything in insert mode
@@ -248,3 +251,6 @@ let g:NERDSpaceDelims=1
 let g:javascript_plugin_jsdoc=1 " Syntax highlighting for JSDocs
 let g:javascript_plugin_ngdoc=1 " Syntax highlighting for NGDocs
 let g:javascript_plugin_flow=1  " Syntax highlighting for flow
+
+" Javascript libraries support syntax stuff
+let g:used_javascript_libs='vue,react,jquery'
