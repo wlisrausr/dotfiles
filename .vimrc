@@ -94,6 +94,9 @@ Plug 'jelera/vim-javascript-syntax'
 " Easily search for, substitute, and abbreviate multiple variants of a word <https://github.com/tpope/vim-abolish>
 Plug 'tpope/vim-abolish'
 
+" Hybrid colorscheme <https://github.com/w0ng/vim-hybrid>
+Plug 'w0ng/vim-hybrid'
+
 call plug#end()
 
 " Allow backspacing over everything in insert mode
@@ -260,3 +263,7 @@ let g:javascript_plugin_flow=1  " Syntax highlighting for flow
 
 " Javascript libraries support syntax stuff
 let g:used_javascript_libs='vue,react,jquery'
+
+" Hybrid colorscheme stuff
+let g:hybrid_custom_term_colors=1
+let g:hybrid_reduced_contrast=1 " Remove this line if using the default palette.
