@@ -88,9 +88,6 @@ Plug 'othree/html5.vim'
 " Syntax for js libraries <https://github.com/othree/javascript-libraries-syntax.vim>
 Plug 'othree/javascript-libraries-syntax.vim'
 
-" Jellybeans colorscheme <https://github.com/nanotech/jellybeans.vim>
-Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.6' }
-
 " Enhanced js syntax <https://github.com/jelera/vim-javascript-syntax>
 Plug 'jelera/vim-javascript-syntax'
 
@@ -120,7 +117,7 @@ set copyindent             " Use same indent
 set history=10000          " Set search history numbers
 set encoding=utf-8         " Set char encoding to UTF-8
 set background=dark        " Set background colors to dark
-colorscheme jellybeans     " Set colorscheme
+colorscheme hybrid         " Set colorscheme
 
 " Set window title for timing app
 set titlestring=Vim\ %(\ %{expand(\"%:p:h\")}%)/%(\ %a%)
@@ -263,7 +260,3 @@ let g:javascript_plugin_flow=1  " Syntax highlighting for flow
 
 " Javascript libraries support syntax stuff
 let g:used_javascript_libs='vue,react,jquery'
-
-" Jellybeans-vim stuff
-" Don't change terminal color mapping
-let g:jellybeans_use_lowcolor_black=0
