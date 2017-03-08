@@ -223,9 +223,6 @@ nmap ga <Plug>(EasyAlign)
 let g:pymode_lint_unmodified=1
 let g:pymode_lint_message=1
 
-" Set python 3 syntax checking
-" let g:pymode_python = 'python3'
-
 " Goyo Stuff
 " Auto activate goyo with ligthlime
 autocmd! User GoyoEnter Limelight
