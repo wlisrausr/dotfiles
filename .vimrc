@@ -120,14 +120,12 @@ set copyindent             " Use same indent
 set history=10000          " Set search history numbers
 set encoding=utf-8         " Set char encoding to UTF-8
 set background=dark        " Set background colors to dark
+set t_Co=256               " Enable 256 colors
+set t_ut=                  " Better colorscheme in tmux
 colorscheme hybrid         " Set colorscheme
 
 " Set window title for timing app
 set titlestring=Vim\ %(\ %{expand(\"%:p:h\")}%)/%(\ %a%)
-
-" Make vim color looks good
-hi Normal ctermbg=NONE
-hi NonText ctermbg=NONE
 
 " Tab settings
 set expandtab             " Expand tabs into spaces
