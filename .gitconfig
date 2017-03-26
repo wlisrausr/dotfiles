@@ -25,3 +25,5 @@
     default = current
 [color]
     ui = always
+[merge]
+	ff = false
