@@ -1,7 +1,7 @@
 " Author  : Wanda Ichsanul Isra <wandaisra@gmail.com>
 " Purpose : Make vim superior for me
 
-" Use Vim settings rather than Vi settings
+" Unlock the full potential of vim
 set nocompatible
 
 " Enable custom identation for each file
@@ -139,8 +139,6 @@ set shiftwidth=4
 filetype plugin on
 
 " Fold setings
-set foldmethod=syntax     " Fold based on syntax
-set foldnestmax=10        " Deepest fold is 10 levels
 set nofoldenable          " Don't fold by default
 
 " Change file update time from 4s to 0.25s for gitgutter
@@ -209,6 +207,7 @@ let g:airline#extensions#tabline#enabled=1        " Show airline for tabs too
 let g:airline#extensions#tabline#left_sep=' '     " Set left separator
 let g:airline#extensions#tabline#left_alt_sep='|' " Set alt separator
 let g:airline#extensions#hunks#non_zero_only=1    " In vim-airline, only display 'hunks' if the diff is non-zero
+let g:airline#extensions#tabline#fnamemod = ':t'  " Remove full path in tabline
 
 " EasyAlign stuff
 " Start interactive EasyAlign in visual mode (e.g. vipga)
@@ -262,3 +261,12 @@ let g:used_javascript_libs='vue,react,jquery'
 " Hybrid colorscheme stuff
 let g:hybrid_custom_term_colors=1
 let g:hybrid_reduced_contrast=1 " Remove this line if using the default palette.
+
+" DelimiteMate settings
+let delimitMate_expand_cr = 1
+
+augroup mydelimitMate
+  au!
+  au FileType markdown let b:delimitMate_nesting_quotes = ["`"]
+  au FileType python let b:delimitMate_nesting_quotes = ['"', "'"]
+augroup END
