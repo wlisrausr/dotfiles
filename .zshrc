@@ -39,7 +39,7 @@ else
   export EDITOR='vim'
 fi
 
-export EDITOR=vim
+export PAGER=vimpager
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
