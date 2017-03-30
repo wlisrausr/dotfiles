@@ -5,7 +5,7 @@
 set nocompatible
 
 " Enable custom identation for each file
-filetype plugin indent on
+" filetype plugin indent on
 
 " Using vim-plug plugin manager
 call plug#begin('~/.vim/plugged')
@@ -148,6 +148,20 @@ set updatetime=250
 autocmd BufNewFile,BufRead *.php set colorcolumn=80
 autocmd BufNewFile,BufRead *.php set textwidth=80
 
+" HTML spesific settings
+autocmd BufNewFile,BufRead *.html set colorcolumn=80
+autocmd BufNewFile,BufRead *.html set textwidth=80
+autocmd BufNewFile,BufRead *.html set tabstop=2
+autocmd BufNewFile,BufRead *.html set softtabstop=2
+autocmd BufNewFile,BufRead *.html set shiftwidth=2
+
+" JS spesific settings
+autocmd BufNewFile,BufRead *.js set colorcolumn=80
+autocmd BufNewFile,BufRead *.js set textwidth=80
+autocmd BufNewFile,BufRead *.js set tabstop=2
+autocmd BufNewFile,BufRead *.js set softtabstop=2
+autocmd BufNewFile,BufRead *.js set shiftwidth=2
+
 " Ignore case on autocomplete command
 set ignorecase
 
@@ -270,3 +284,6 @@ augroup mydelimitMate
   au FileType markdown let b:delimitMate_nesting_quotes = ["`"]
   au FileType python let b:delimitMate_nesting_quotes = ['"', "'"]
 augroup END
+
+" Syntastic stuff
+let g:syntastic_html_checkers=['']
