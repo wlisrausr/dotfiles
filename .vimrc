@@ -4,9 +4,6 @@
 " Unlock the full potential of vim
 set nocompatible
 
-" Enable custom identation for each file
-" filetype plugin indent on
-
 " Using vim-plug plugin manager
 call plug#begin('~/.vim/plugged')
 
