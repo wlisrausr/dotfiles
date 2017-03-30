@@ -26,4 +26,4 @@
 [color]
     ui = always
 [merge]
-	ff = false
+    ff = false
