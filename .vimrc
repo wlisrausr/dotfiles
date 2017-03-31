@@ -146,15 +146,11 @@ autocmd BufNewFile,BufRead *.php set colorcolumn=80
 autocmd BufNewFile,BufRead *.php set textwidth=80
 
 " HTML spesific settings
-autocmd BufNewFile,BufRead *.html set colorcolumn=80
-autocmd BufNewFile,BufRead *.html set textwidth=80
 autocmd BufNewFile,BufRead *.html set tabstop=2
 autocmd BufNewFile,BufRead *.html set softtabstop=2
 autocmd BufNewFile,BufRead *.html set shiftwidth=2
 
 " JS spesific settings
-autocmd BufNewFile,BufRead *.js set colorcolumn=80
-autocmd BufNewFile,BufRead *.js set textwidth=80
 autocmd BufNewFile,BufRead *.js set tabstop=2
 autocmd BufNewFile,BufRead *.js set softtabstop=2
 autocmd BufNewFile,BufRead *.js set shiftwidth=2
@@ -284,3 +280,21 @@ augroup END
 
 " Syntastic stuff
 let g:syntastic_html_checkers=['']
+
+" Easymotion Stuff
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+" Jump to anywhere you want with minimal keystrokes, with just one key binding.
+" `s{char}{label}`
+nmap s <Plug>(easymotion-overwin-f)
+" or
+" `s{char}{char}{label}`
+" Need one more keystroke, but on average, it may be more comfortable.
+nmap s <Plug>(easymotion-overwin-f2)
+
+" Turn on case insensitive feature
+let g:EasyMotion_smartcase = 1
+
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
