@@ -298,3 +298,11 @@ let g:EasyMotion_smartcase = 1
 " JK motions: Line motions
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
+
+" Vimpager stuff
+let g:vimpager = {}
+let g:less     = {}
+
+let g:less.enabled = 0 " Use regular vim motion
+let g:less.number  = 1 " Turn on line numbers
+let g:vimpager.X11 = 0 " Bit faster startup
