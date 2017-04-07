@@ -2,6 +2,7 @@
     excludesfile = /Users/wlisrausr/.gitignore_global
     editor = vim
     autocrlf = input
+    pager = vimpager
 [user]
     name = Wanda Ichsanul Isra
     email = wandaisra@gmail.com
