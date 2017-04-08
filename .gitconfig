@@ -28,3 +28,6 @@
     ui = always
 [merge]
     ff = false
+[pager]
+    hist = less
+    lpr = less
