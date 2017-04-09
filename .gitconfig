@@ -31,3 +31,5 @@
 [pager]
     hist = less
     lpr = less
+[credential]
+	helper = cache
