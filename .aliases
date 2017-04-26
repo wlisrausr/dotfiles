@@ -15,6 +15,7 @@ alias lsf='ls -l | grep "^-"' # List files only
 alias lsh='ls -ld .??*'       # List hidden files only
 alias lsa='ls -la'            # List all files
 alias lsah='ls -lAh'          # List all files with human readable size format
+alias lst='ls -tl'            # List & order by last modified
 
 alias art='php artisan --env=local'  # Run artisan command
 alias phpunit='./vendor/bin/phpunit' # Run PHP unit
