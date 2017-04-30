@@ -161,9 +161,6 @@ set ignorecase
 " Set leader key to comma
 let mapleader=","
 
-" Disable <esc> in insert mode
-inoremap <esc> <nop>
-
 " Make word uppercase in insert mode
 imap <c-u> jkveU
 
