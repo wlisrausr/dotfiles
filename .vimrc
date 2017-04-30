@@ -161,9 +161,6 @@ set ignorecase
 " Set leader key to comma
 let mapleader=","
 
-" Set jk as <esc> in insert mode
-inoremap jk <esc>
-
 " Disable <esc> in insert mode
 inoremap <esc> <nop>
 
