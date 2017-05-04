@@ -119,6 +119,7 @@ set encoding=utf-8         " Set char encoding to UTF-8
 set background=dark        " Set background colors to dark
 set t_Co=256               " Enable 256 colors
 set t_ut=                  " Better colorscheme in tmux
+set relativenumber         " Set relative line number
 colorscheme hybrid         " Set colorscheme
 
 " Set window title for timing app
