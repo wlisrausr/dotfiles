@@ -40,12 +40,6 @@ Plug 'airblade/vim-gitgutter'
 " Markdown vim mode <https://github.com/plasticboy/vim-markdown>
 Plug 'plasticboy/vim-markdown'
 
-" Distraction mode <https://github.com/junegunn/goyo.vim>
-Plug 'junegunn/goyo.vim'
-
-" Focus on paraghraph while writing <https://github.com/junegunn/limelight.vim>
-Plug 'junegunn/limelight.vim'
-
 " Auto-completion for special char <https://github.com/Raimondi/delimitMate>
 Plug 'Raimondi/delimitMate'
 
@@ -221,14 +215,6 @@ nmap ga <Plug>(EasyAlign)
 " Pymode stuff
 let g:pymode_lint_unmodified=1
 let g:pymode_lint_message=1
-
-" Goyo Stuff
-" Auto activate goyo with ligthlime
-autocmd! User GoyoEnter Limelight
-autocmd! User GoyoLeave Limelight!
-
-" Set goyo width
-let g:goyo_width=130
 
 " PHP vim stuff
 " Put at the very end of your .vimrc file.
