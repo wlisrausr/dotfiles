@@ -18,7 +18,7 @@ SAVEHIST=1000
 HIST_STAMPS="mm/dd/yyyy"
 
 # Plugins to load
-plugins=(git)
+plugins=(git git-extras osx web-search jsontools extract npm brew bower composer cloudapp docker)
 
 # User configuration
 export DEFAULT_USER='wlisrausr'
