@@ -3,8 +3,7 @@
 # Reload zshrc
 alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
 
-alias ping8='ping 8.8.8.8'        # Ping the biggest DNS site
-alias pingg='ping www.google.com' # Ping the biggest search engine
+alias pingg='ping google.com' # Ping the biggest search engine
 
 alias mkdir='mkdir -p'            # Make directory with intermediate option
 alias tmux='tmux -u'              # Start tmux session with UTF-8 checks
