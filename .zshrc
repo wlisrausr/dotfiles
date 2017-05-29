@@ -41,6 +41,11 @@ fi
 
 export PAGER=vimpager
 
+# Android HOME env variables
+export ANDROID_HOME=${HOME}/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
