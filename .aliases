@@ -64,3 +64,6 @@ alias v='f -e vim'       # quick opening files with vim
 
 # Update & upgrade brew
 alias brew_double_u='brew update && brew upgrade'
+
+alias run_emu='~/Library/Android/sdk/tools/emulator -netdelay none -netspeed full'
+alias list_emu='~/Library/Android/sdk/tools/emulator -list-avds'
