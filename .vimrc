@@ -96,9 +96,6 @@ set backspace=indent,eol,start
 filetype on                " Enable file type detection
 set number                 " Show line number
 set title                  " Show window title
-set ruler                  " Show cursor position all the time
-set cursorline             " Highlight current cursor line
-set cursorcolumn           " Highlight current cursor column
 set wildmenu               " Show command line completion with <Tab>
 set showcmd                " Display incomplete command
 syntax on                  " Show syntax highlighting
@@ -114,6 +111,7 @@ set background=dark        " Set background colors to dark
 set t_Co=256               " Enable 256 colors
 set t_ut=                  " Better colorscheme in tmux
 set relativenumber         " Set relative line number
+set re=1                   " Force old regex engine on newer version
 colorscheme hybrid         " Set colorscheme
 
 " Set window title for timing app
