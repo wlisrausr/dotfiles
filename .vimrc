@@ -49,9 +49,6 @@ Plug 'jwalton512/vim-blade'
 " Vim insert mode completion <https://github.com/ervandew/supertab>
 Plug 'ervandew/supertab'
 
-" Vim python mode <https://github.com/python-mode/python-mode>
-Plug 'klen/python-mode'
-
 " Fuzzy finder <https://github.com/kien/ctrlp.vim>
 Plug 'kien/ctrlp.vim'
 
@@ -69,9 +66,6 @@ Plug 'majutsushi/tagbar'
 
 " Javascript indentation & syntax support <https://github.com/pangloss/vim-javascript>
 Plug 'pangloss/vim-javascript'
-
-" Repeat function for plugin keybinding <https://github.com/tpope/vim-repeat>
-Plug 'tpope/vim-repeat'
 
 " HTML 5 <https://github.com/othree/html5.vim>
 Plug 'othree/html5.vim'
