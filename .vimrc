@@ -37,14 +37,8 @@ Plug 'easymotion/vim-easymotion'
 " Show git diff in the gutter <https://github.com/airblade/vim-gitgutter>
 Plug 'airblade/vim-gitgutter'
 
-" Markdown vim mode <https://github.com/plasticboy/vim-markdown>
-Plug 'plasticboy/vim-markdown'
-
 " Auto-completion for special char <https://github.com/Raimondi/delimitMate>
 Plug 'Raimondi/delimitMate'
-
-" Blade syntax highlighting <https://github.com/jwalton512/vim-blade>
-Plug 'jwalton512/vim-blade'
 
 " Vim insert mode completion <https://github.com/ervandew/supertab>
 Plug 'ervandew/supertab'
@@ -55,32 +49,14 @@ Plug 'kien/ctrlp.vim'
 " Git wrapper <https://github.com/tpope/vim-fugitive>
 Plug 'tpope/vim-fugitive'
 
-" Up-to-date PHP syntax <https://github.com/stanangeloff/php.vim>
-Plug 'stanangeloff/php.vim'
-
 " Syntax checking hacks <https://github.com/vim-syntastic/syntastic>
 Plug 'scrooloose/syntastic'
 
 " Browse tags of current file <https://github.com/majutsushi/tagbar>
 Plug 'majutsushi/tagbar'
 
-" Javascript indentation & syntax support <https://github.com/pangloss/vim-javascript>
-Plug 'pangloss/vim-javascript'
-
-" HTML 5 <https://github.com/othree/html5.vim>
-Plug 'othree/html5.vim'
-
-" Syntax for js libraries <https://github.com/othree/javascript-libraries-syntax.vim>
-Plug 'othree/javascript-libraries-syntax.vim'
-
-" Enhanced js syntax <https://github.com/jelera/vim-javascript-syntax>
-Plug 'jelera/vim-javascript-syntax'
-
 " Easily search for, substitute, and abbreviate multiple variants of a word <https://github.com/tpope/vim-abolish>
 Plug 'tpope/vim-abolish'
-
-" Hybrid colorscheme <https://github.com/w0ng/vim-hybrid>
-Plug 'w0ng/vim-hybrid'
 
 call plug#end()
 
