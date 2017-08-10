@@ -12,7 +12,6 @@ alias hosts='sudo vim /etc/hosts' # Edit hosts name
 alias lsd='ls -l | grep "^d"' # List directory only
 alias lsf='ls -l | grep "^-"' # List files only
 alias lsh='ls -ld .??*'       # List hidden files only
-alias lsa='ls -la'            # List all files
 alias lsah='ls -lAh'          # List all files with human readable size format
 alias lst='ls -tl'            # List & order by last modified
 
