@@ -7,21 +7,6 @@
     name = Wanda Ichsanul Isra
     email = wandaisra@gmail.com
 [alias]
-    sp = status
-    ss = status -s
-    ssb = status -sb
-    si = status --ignored
-    au = add -u
-    adot = add .
-    ap = add
-    cp = commit
-    cam = commit -am
-    cm = commit -m
-    lp = log
-    lpr = log --color --graph --pretty=format:'%C(red)%h%Creset » %C(green)%ad%Creset %s%C(green)%d%Creset %C(yellow)%an %C(yellow)<%ae>%Creset' --abbrev-commit --date=short
-    hist = log --graph --full-history --all --pretty=format:'%C(red)%h%Creset » %C(green)%ad%Creset %s%C(green)%d%Creset %C(yellow)%an %C(yellow)<%ae>%Creset' --abbrev-commit --date=short
-    co = chekcout
-    df = diff --color --color-words --abbrev
     dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
 [push]
     default = current
