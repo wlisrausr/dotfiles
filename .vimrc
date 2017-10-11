@@ -82,7 +82,7 @@ set t_Co=256               " Enable 256 colors
 set t_ut=                  " Better colorscheme in tmux
 set relativenumber         " Set relative line number
 set re=1                   " Force old regex engine on newer version
-colorscheme hybrid         " Set colorscheme
+colorscheme jellybeans     " Set colorscheme
 
 " Set window title for timing app
 set titlestring=Vim\ %(\ %{expand(\"%:p:h\")}%)/%(\ %a%)
