@@ -2,7 +2,7 @@
 export ZSH=/Users/wlisrausr/.oh-my-zsh
 
 # Set name of the theme to load.
-ZSH_THEME="af-magic-custom"
+ZSH_THEME="agnoster-custom"
 
 # Disable bi-weekly auto-update checks.
 DISABLE_AUTO_UPDATE="true"
