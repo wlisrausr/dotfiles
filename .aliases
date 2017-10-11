@@ -62,7 +62,7 @@ alias zz='fasd_cd -d -i' # cd with interactive selection
 alias v='f -e vim'       # quick opening files with vim
 
 # Update & upgrade brew
-alias brew-double-u='brew update && brew upgrade'
+alias brew-w='brew update && brew upgrade'
 
 alias run-emu='~/Library/Android/sdk/tools/emulator -netdelay none -netspeed full'
 alias list-emu='~/Library/Android/sdk/tools/emulator -list-avds'
