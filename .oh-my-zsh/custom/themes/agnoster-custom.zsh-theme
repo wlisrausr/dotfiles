@@ -207,6 +207,7 @@ prompt_virtualenv() {
 prompt_status() {
   local symbols
   symbols=()
+  printf "\n";
   # [[ $RETVAL -ne 0 ]] && symbols+="%{%F{red}%}✘"
   [[ $RETVAL -ne 0 ]] && symbols+="%{%F{white}%}✘"
   [[ $UID -eq 0 ]] && symbols+="%{%F{yellow}%}⚡"
