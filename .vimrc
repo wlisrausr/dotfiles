@@ -55,9 +55,6 @@ Plug 'scrooloose/syntastic'
 " Browse tags of current file <https://github.com/majutsushi/tagbar>
 Plug 'majutsushi/tagbar'
 
-" Easily search for, substitute, and abbreviate multiple variants of a word <https://github.com/tpope/vim-abolish>
-Plug 'tpope/vim-abolish'
-
 call plug#end()
 
 " Allow backspacing over everything in insert mode
@@ -125,7 +122,7 @@ set ignorecase
 let mapleader=","
 
 " Make word uppercase in insert mode
-imap <c-u> jkveU
+imap <c-u> <esc>veU
 
 " Edit vimrc shortcut
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
@@ -197,7 +194,7 @@ augroup phpSyntaxOverride
 augroup END
 
 " Tagbar stuff
-nmap <F8> :TagbarToggle<CR>
+nmap <Leader>t :TagbarToggle<CR>
 
 " Ctrlp stuff
 let g:ctrlp_map = '<c-p>'
