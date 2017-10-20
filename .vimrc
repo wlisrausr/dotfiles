@@ -47,7 +47,7 @@ Plug 'ervandew/supertab'
 " Plug 'kien/ctrlp.vim'
 
 " A command line fuzzy finder
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 " Git wrapper <https://github.com/tpope/vim-fugitive>
 Plug 'tpope/vim-fugitive'
