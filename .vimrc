@@ -44,7 +44,10 @@ Plug 'Raimondi/delimitMate'
 Plug 'ervandew/supertab'
 
 " Fuzzy finder <https://github.com/kien/ctrlp.vim>
-Plug 'kien/ctrlp.vim'
+" Plug 'kien/ctrlp.vim'
+
+" A command line fuzzy finder
+Plug 'junegunn/fzf'
 
 " Git wrapper <https://github.com/tpope/vim-fugitive>
 Plug 'tpope/vim-fugitive'
@@ -197,7 +200,7 @@ augroup END
 nmap <Leader>t :TagbarToggle<CR>
 
 " Ctrlp stuff
-let g:ctrlp_map = '<c-p>'
+" let g:ctrlp_map = '<c-p>'
 
 " The nerd commenter stuff
 " Add spaces after comment delimiters by default
