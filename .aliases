@@ -9,12 +9,14 @@ alias mkdir='mkdir -p'            # Make directory with intermediate option
 alias tmux='tmux -u'              # Start tmux session with UTF-8 checks
 alias hosts='sudo vim /etc/hosts' # Edit hosts name
 
+# Files and directories
 alias lsd='ls -l | grep "^d"' # List directory only
 alias lsf='ls -l | grep "^-"' # List files only
 alias lsh='ls -ld .??*'       # List hidden files only
 alias lsah='ls -lAh'          # List all files with human readable size format
 alias lst='ls -tl'            # List & order by last modified
 
+# Laravel or PHP
 alias art='php artisan --env=local'  # Run artisan command
 alias phpunit='./vendor/bin/phpunit' # Run PHP unit
 
@@ -64,5 +66,6 @@ alias v='f -e vim'       # quick opening files with vim
 # Update & upgrade brew
 alias brew-w='brew update && brew upgrade'
 
+# Android development
 alias run-emu='~/Library/Android/sdk/tools/emulator -netdelay none -netspeed full'
 alias list-emu='~/Library/Android/sdk/tools/emulator -list-avds'
