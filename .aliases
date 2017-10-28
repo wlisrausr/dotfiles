@@ -73,5 +73,5 @@ alias run-emu='~/Library/Android/sdk/tools/emulator -netdelay none -netspeed ful
 alias list-emu='~/Library/Android/sdk/tools/emulator -list-avds'
 
 # Mongod
-alias start-mongo='mongod --port 27017 --dbpath /data/db'
-alias login-mongo='mongo --port 27017'
+alias start-mongo='mongod --auth --port 27017 --dbpath /data/db'
+alias login-mongo='mongo --port 27017 -u "wlisrausr" -p "RatHead93" --authenticationDatabase "admin"'
