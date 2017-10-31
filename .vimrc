@@ -43,11 +43,9 @@ Plug 'Raimondi/delimitMate'
 " Vim insert mode completion <https://github.com/ervandew/supertab>
 Plug 'ervandew/supertab'
 
-" Fuzzy finder <https://github.com/kien/ctrlp.vim>
-" Plug 'kien/ctrlp.vim'
-
 " A command line fuzzy finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 " Git wrapper <https://github.com/tpope/vim-fugitive>
 Plug 'tpope/vim-fugitive'
@@ -199,9 +197,6 @@ augroup END
 " Tagbar stuff
 nmap <Leader>t :TagbarToggle<CR>
 
-" Ctrlp stuff
-" let g:ctrlp_map = '<c-p>'
-
 " The nerd commenter stuff
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims=1
@@ -263,3 +258,6 @@ let g:less     = {}
 let g:less.enabled = 0 " Use regular vim motion
 let g:less.number  = 1 " Turn on line numbers
 let g:vimpager.X11 = 0 " Bit faster startup
+
+" FZF stuff
+nnoremap <Leader>f :Files<cr>
