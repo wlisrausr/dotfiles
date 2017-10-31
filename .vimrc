@@ -93,6 +93,11 @@ set softtabstop=4         " Default to 4 spaces for the soft tab
 " For when <TAB> is pressed at the beginning of a line
 set shiftwidth=4
 
+" next buffer by ]
+nmap ] :bn<cr>
+" previous buffer by [
+nmap [ :bp<cr>
+
 " Activate filetype plugin
 filetype plugin on
 
