@@ -22,6 +22,9 @@ alias phpunit='./vendor/bin/phpunit' # Run PHP unit
 alias start-lumen-server='php -S localhost:8000 -t public'
 alias random-key='php -r "echo md5(uniqid()).\"\n\";"'
 
+# Rails aliases
+alias rails-start='rails server'
+
 # Reset file permission to default
 alias chmod-reset='find . -type d -print0 | xargs -0 chmod 755 && find . -type f -print0 | xargs -0 chmod 644'
 
