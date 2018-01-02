@@ -56,6 +56,9 @@ Plug 'scrooloose/syntastic'
 " Browse tags of current file <https://github.com/majutsushi/tagbar>
 Plug 'majutsushi/tagbar'
 
+" Go language support
+Plug 'fatih/vim-go'
+
 call plug#end()
 
 " Allow backspacing over everything in insert mode
