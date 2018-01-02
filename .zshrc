@@ -69,3 +69,4 @@ eval "$(rbenv init -)"
 
 # Go PATH setup
 export PATH=$PATH:/usr/local/bin/go
+export GOPATH=$HOME/code/go
