@@ -66,3 +66,6 @@ fi
 # Rubyenv setup
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# Go PATH setup
+export PATH=$PATH:/usr/local/bin/go
