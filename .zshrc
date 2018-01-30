@@ -71,3 +71,5 @@ eval "$(rbenv init -)"
 export PATH=$PATH:/usr/local/bin/go
 export GOPATH=$HOME/code/go
 export PATH=$PATH:$(go env GOPATH)/bin
+
+export PATH="$HOME/pear/bin:$HOME/pear/share/pear/:$PATH"
