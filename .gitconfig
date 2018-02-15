@@ -20,3 +20,5 @@
     helper = cache
 [help]
     autocorrect = 1
+[branch]
+    autosetuprebase = always
