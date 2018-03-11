@@ -22,40 +22,11 @@ alias phpunit='./vendor/bin/phpunit' # Run PHP unit
 alias start-lumen-server='php -S localhost:8000 -t public'
 alias random-key='php -r "echo md5(uniqid()).\"\n\";"'
 
-# Rails aliases
-alias rails-start='rails server'
-
 # Reset file permission to default
 alias chmod-reset='find . -type d -print0 | xargs -0 chmod 755 && find . -type f -print0 | xargs -0 chmod 644'
 
 # Remove unnecessary files
 alias remove-unnecessary-files="find . -type f \( -name .DS_Store -o -name Thumbs.db \) -print0 | xargs -0 rm"
-
-# Python aliases
-alias python2='python2.7'
-alias python='python3'
-
-# Nginx aliases
-alias nginx.start='sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
-alias nginx.stop='sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
-alias nginx.restart='nginx.stop && nginx.start'
-alias nginx.config='sudo nginx -t'
-alias nginx.enter='cd /usr/local/etc/nginx'
-
-# PHP FPM aliases
-alias php-fpm.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php71.plist"
-alias php-fpm.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.php71.plist"
-alias php-fpm.restart='php-fpm.stop && php-fpm.start'
-
-# MySQL aliases
-alias mysql.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
-alias mysql.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
-alias mysql.restart='mysql.stop && mysql.start'
-
-# Nginx log aliases
-alias nginx.logs.error='tail -250f /usr/local/etc/nginx/logs/error.log'
-alias nginx.logs.access='tail -250f /usr/local/etc/nginx/logs/access.log'
-alias nginx.logs.default.access='tail -250f /usr/local/etc/nginx/logs/default.access.log'
 
 # Fasd aliases
 alias a='fasd -a'        # any
@@ -67,13 +38,3 @@ alias sf='fasd -sif'     # interactive file selection
 alias z='fasd_cd -d'     # cd, same functionality as j in autojump
 alias zz='fasd_cd -d -i' # cd with interactive selection
 alias v='f -e vim'       # quick opening files with vim
-
-# Update & upgrade brew
-alias brew-w='brew update && brew upgrade'
-
-# Android development
-alias run-emu='~/Library/Android/sdk/tools/emulator -netdelay none -netspeed full'
-alias list-emu='~/Library/Android/sdk/tools/emulator -list-avds'
-
-# Mongod
-alias start-mongo='mongod --auth --port 27017 --dbpath /data/db'

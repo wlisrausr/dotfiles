@@ -1,6 +1,0 @@
-pane	0	1	:[tmux]	0	:-	1	:/Users/wlisrausr	1	ping	:ping www.google.com
-pane	0	2	:zsh	1	:*	1	:/Users/wlisrausr	0	zsh	:
-pane	0	2	:zsh	1	:*	2	:/Users/wlisrausr	1	vim	:vim .tmux.conf
-window	0	1	0	:-	cdbd,158x38,0,0,0
-window	0	2	1	:*	cbc5,158x38,0,0{79x38,0,0,1,78x38,80,0,2}
-state	0	
