@@ -119,7 +119,11 @@ bindkey -v
 # Fasd auto init
 eval "$(fasd --init auto)"
 
+# GOPATH stuff
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/Code/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 export PATH=$PATH:$(go env GOPATH)/bin
+
+# Yarn global package bin
+export PATH=$HOME/.yarn/bin:$PATH
