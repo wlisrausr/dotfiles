@@ -127,3 +127,4 @@ export PATH=$PATH:$(go env GOPATH)/bin
 
 # Yarn global package bin
 export PATH=$HOME/.yarn/bin:$PATH
+export PYTHONPATH="/home/wlisrausr/Code/dexter/hammertime"
