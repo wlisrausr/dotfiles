@@ -80,6 +80,7 @@ export PAGER=vimpager
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
+source $HOME/.toped-aliases
 
 # User configuration
 export DEFAULT_USER='wlisrausr'
