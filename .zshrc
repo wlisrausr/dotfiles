@@ -129,3 +129,7 @@ export PATH=$PATH:$(go env GOPATH)/bin
 # Yarn global package bin
 export PATH=$HOME/.yarn/bin:$PATH
 export PYTHONPATH="/home/wlisrausr/Code/dexter/hammertime"
+
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
